@@ -1,17 +1,21 @@
 # preprocess_prototype
 
-preprocess_shell README
+## preprocess_shell README
 
--=REQUIREMENTS=-
+### -=REQUIREMENTS=-
 ================
+
 The following python libraries must be installed to run this script:
--Python Image Library (or 'PIL')
--python imutils
--argparse
--computer vision 2 (or 'cv2')
--numpy & scipy
+- Python Image Library (or 'PIL')
+- python imutils
+- argparse
+- computer vision 2 (or 'cv2')
+- numpy and scipy
+
 ================
--=EXECUTING=-
+
+### -=EXECUTING=-
+
 when running, preprocess_shell requires 2 parameters in order to execute:
 1. execution flag
 
@@ -30,7 +34,7 @@ OPTIONALLY, a third argument can be used to specify a custom output path:
 '-o' to specify that a custom output path is given after the flag. If left uncalled, the outpath is in the filepath root folder by default.
 
 ================
--=FUNCTIONS=-
+### -=FUNCTIONS=-
 the preprocess algorithm is comprised of several functions:
 
 main()
@@ -38,9 +42,9 @@ instantiates the available command line arguments and sets up inevitable cases f
 
 preprocess(switch,filepath,outpath)
 arguments:
--switch (boolean) dictates whether the preprocess suite is running manual or demo mode
--filepath (string) is where an input path is passed in
--outpath (string) is passed an empty string if no output path is specified
+- switch (boolean) dictates whether the preprocess suite is running manual or demo mode
+- filepath (string) is where an input path is passed in
+- outpath (string) is passed an empty string if no output path is specified
 
 MED_BRIGHTNESS is used to control the threshold with which the median brightness of a given filepath image is compared against. This value can be changed to make the algorithm for brightness adjustment more or less sensitive (bigger adjustments in brightness). The default value is 160.00
 
