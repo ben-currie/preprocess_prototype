@@ -51,6 +51,12 @@ arguments:
 The preprocess function creates an output folder based on input (whether or not an outpath is provided) and analyzes images using the other included functions.
 
 #### calculate_brightness(image)
+argument(s):
+- image (image file) to evaluate the brightness value
 
+functions by taking a defensive copy of the parameter image and converting it to grayscale. Then, once conversion has taken place, the image data is then converted into an array and a mean value is extracted and returned.
 
 #### blur_detection(image)
+argument(s):
+- image (image file) to evaluate the brightness value
+
