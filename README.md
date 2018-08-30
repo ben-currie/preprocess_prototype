@@ -37,20 +37,20 @@ OPTIONALLY, a third argument can be used to specify a custom output path:
 ### -=FUNCTIONS=-
 the preprocess algorithm is comprised of several functions:
 
-main()
+#### main()
 instantiates the available command line arguments and sets up inevitable cases for their use (whether manual or auto/demo mode is selected, if an outpath is given)
 
-preprocess(switch,filepath,outpath)
+#### preprocess(switch,filepath,outpath)
 arguments:
 - switch (boolean) dictates whether the preprocess suite is running manual or demo mode
 - filepath (string) is where an input path is passed in
 - outpath (string) is passed an empty string if no output path is specified
 
-MED_BRIGHTNESS is used to control the threshold with which the median brightness of a given filepath image is compared against. This value can be changed to make the algorithm for brightness adjustment more or less sensitive (bigger adjustments in brightness). The default value is 160.00
+**MED_BRIGHTNESS** is used to control the threshold with which the median brightness of a given filepath image is compared against. This value can be changed to make the algorithm for brightness adjustment more or less sensitive (bigger adjustments in brightness). The default value is 160.00
 
 The preprocess function creates an output folder based on input (whether or not an outpath is provided) and analyzes images using the other included functions.
 
-calculate_brightness(image)
+#### calculate_brightness(image)
 
 
-blur_detection(image)
+#### blur_detection(image)
